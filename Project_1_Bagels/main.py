@@ -25,7 +25,7 @@ import random
 max_numGuesses = 10
 
 
-''' METHODS '''
+''' FUNCTIONS '''
 #This is our number generator; it returns a random 3 digit number as a string | it simplifies the code to do it this way
 def generateNumber():
     val = ""
@@ -79,7 +79,7 @@ def gameLoop():
     print("When I say 'Pico', one digit is correct but in the wrong position.")
     print("When I say 'Fermi', one digit is correct and in the right position.")
     print("When I say 'Bagels', no digit is correct.")
-    print("The number is a 3 digit number between 100 and 999.")
+    print("The number is a 3 digit number between 000 and 999.")
     #let the game begin, the user will input values unitl either they guess correct OR they run out of guesses
     correctGuess = False
 

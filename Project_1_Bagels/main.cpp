@@ -48,7 +48,7 @@ std::string generateNumber()
         int num = rand()%10;
         val += std::to_string(num);
     }
-    //std::cout << val << std::endl;
+    std::cout << val << std::endl;
     return val;
     
 }
@@ -128,7 +128,7 @@ int gameLoop()
     std::cout << "When I say 'Pico', one digit is correct but in the wrong position." << std::endl;
     std::cout << "When I say 'Fermi', one digit is correct and in the right position." << std::endl;
     std::cout << "When I say 'Bagels', no digit is correct." << std::endl;
-    std::cout << "The number is a 3 digit number between 100 and 999." << std::endl;
+    std::cout << "The number is a 3 digit number between 000 and 999." << std::endl;
     std::string targetNum = generateNumber();
     //int correctGuess = 0;
     for (uint8_t i = 0; i < max_numberGuesses; i++)
@@ -146,6 +146,7 @@ int gameLoop()
         
     }
     std::cout << "HA! I have bested and and proven that my intelgence is better than yours in this niche area of reasoning!" << std::endl;
+    std::cout << "My number was " << targetNum << std::endl;
     std::cout << "Maybe try the easy setting next time. Not everyone needs to act like they are skynet out of the box." << std::endl;
     return 0;
 }
